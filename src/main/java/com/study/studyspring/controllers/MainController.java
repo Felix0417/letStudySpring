@@ -13,4 +13,10 @@ public class MainController {
         return "home";
     }
 
+    @GetMapping("/faq")
+    public String faq(Model model) {
+        model.addAttribute("title", "Инфо");
+        return "faq";
+    }
+
 }
